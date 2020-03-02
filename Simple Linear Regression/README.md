@@ -40,38 +40,38 @@
   **Lưu ý: Khi khởi tạo mô hình, chỉ có một hành động duy nhất là lưu trữ những giá trị của hyperparameter. Cụ thể, ta không thể áp dụng model cho bất kì data nào. Scikit-learn API phân biệt rõ ràng giữa lựa chọn mô hình và áp dụng mô hình vào data.**
 
 ### 4. Sắp xếp dữ liệu thành ma trận tính năng và vector target:
-  **Scikit learn mô tả data là một ma trận hai chiều và mảng một chiều. Để sắp xếp lại dữ liệu ta cần phải thay đổi ma trận thành mảng một chiều bằng cú pháp:
+  **Scikit learn mô tả data là một ma trận hai chiều và mảng một chiều. Để sắp xếp lại dữ liệu ta cần phải thay đổi ma trận thành mảng một chiều bằng cú pháp:**
 ```python
       X = x[:, np.newaxis]
 ```
-Và nó dùng để fit model vào bộ data của chúng ta.**
+**Và nó dùng để fit model vào bộ data của chúng ta.**
 
 ### 5.Fit mô hình vào bộ data:
-  **Để áp dụng mô hình vào data t sẽ dung *fit()* method của model:
+  **Để áp dụng mô hình vào data t sẽ dung *fit()* method của model:**
 ```python
 model.fit(X,y)
 ```
-Trong quá trình fit model, ta luôn nhận được về hai đại lượng đó chính là hệ số hồi quy *coef_* (hay còn gọi là độ dốc) và sai số *intercept_*.
+**Trong quá trình fit model, ta luôn nhận được về hai đại lượng đó chính là hệ số hồi quy *coef_* (hay còn gọi là độ dốc) và sai số *intercept_*.**
 ```python
       model.coef_
       model.intercept_
 ```
 ### 6. Dự đoán nhãn cho những dữ liệu chưa biết (dự đoán kết quả).
-  **Để dự đoán nhãn cho những dữ liệu chưa biết, ta sẽ xây dựng training set. Trong scikit learn, ta dùng *predict()* method để dự đoán.
+  **Để dự đoán nhãn cho những dữ liệu chưa biết, ta sẽ xây dựng training set. Trong scikit learn, ta dùng *predict()* method để dự đoán.**
 ```python
       xfit = np.linspace(-1,11)
 ```
-Và trước hết chúng ta phải sắp xếp lại dữ liệu trong *xfit* giống như với bộ data *X*
+**Và trước hết chúng ta phải sắp xếp lại dữ liệu trong *xfit* giống như với bộ data *X***
 ```python
       Xfit = xfit[:, np.newaxis]
 ```
-Tiếp theo ta sẽ sử dụng model vừa tạo để tiến hành dự đoán.
+**Tiếp theo ta sẽ sử dụng model vừa tạo để tiến hành dự đoán.**
 ```python
       yfit = model.predict(Xfit)
 ```
 
 ### 6. Trực quan hoá mô hình.
-  **Ta sẽ trực quan hoá kết quả bao gồm bộ data đầu và phương trình hồi quy của mô hình.
+  **Ta sẽ trực quan hoá kết quả bao gồm bộ data đầu và phương trình hồi quy của mô hình.**
 ```python
       plt.scatter(x,y)
       plt.plot(xfit,yfit)
