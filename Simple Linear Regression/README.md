@@ -49,7 +49,7 @@
 ### 5.Fit mô hình vào bộ data:
   **Để áp dụng mô hình vào data t sẽ dung *fit()* method của model:**
 ```python
-model.fit(X,y)
+      model.fit(X,y)
 ```
 **Trong quá trình fit model, ta luôn nhận được về hai đại lượng đó chính là hệ số hồi quy *coef_* (hay còn gọi là độ dốc) và sai số *intercept_*.**
 ```python
