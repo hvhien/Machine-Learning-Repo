@@ -27,6 +27,7 @@
   * Thể hiện sức mạnh của mô hình đang được sử dụng thông qua tỷ lệ accuracy 
   * Học trực tiếp từ tập dữ liệu huấn luyện
   * Thường không được tạo thủ công
+  
 **Model Hyperparamter hoàn toàn nằm ngoài mô hình và không phụ thuộc vào tệp huấn luyện. Chúng sẽ có một số nhiệm vụ sau:**
   * Được dùng để huấn luyện và tìm ra parameter hợp lý nhất
   * Nó được tạo thủ công bởi con người trong việc huấn luyện
@@ -77,9 +78,10 @@ Tiếp theo ta sẽ sử dụng model vừa tạo để tiến hành dự đoán
 ```
 
 ### Xong. :)))
-    > Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
+Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
 ### Nguồn tham khảo:
-    > [Scikit-learn](https://scikit-learn.org)
-    > [Python Data Science Handbook O'REILLY](https://libgen.is/book/index.php?md5=B72D6570421B823BA68C6D4B2F7BF2A4)
+[Scikit-learn](https://scikit-learn.org)
+
+[Python Data Science Handbook O'REILLY](https://libgen.is/book/index.php?md5=B72D6570421B823BA68C6D4B2F7BF2A4)
   
 
