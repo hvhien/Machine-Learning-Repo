@@ -76,12 +76,11 @@ model.fit(X,y)
       plt.scatter(x,y)
       plt.plot(xfit,yfit)
 ```
-
+### [Full source code ở đây](https://github.com/tandathcmute/MLrepo/blob/master/Simple%20Linear%20Regression/demoSimpleLinearRegression.ipynb)
 ### Xong. :)))
 Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
 ### Nguồn tham khảo:
 [Scikit-learn](https://scikit-learn.org)
-
 [Python Data Science Handbook O'REILLY](https://libgen.is/book/index.php?md5=B72D6570421B823BA68C6D4B2F7BF2A4)
   
 
