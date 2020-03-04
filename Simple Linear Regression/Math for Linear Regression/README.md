@@ -77,6 +77,7 @@ Trong đó:
   * *theta* chính là ma trận cần tìm, và nó phải bằng đúng số cột của X
   * *precost* để kiểm tra giá trị của điểm đang xét lúc đầu
   * *cost* để kiểm tra giá trị của điểm đang xét lúc sau
+
 Để hàm có thể tìm đúng vị trí điểm lõm của đồ thị thì hai giá trị *precost* và *cost* sẽ gần bằng nhau. Và dựa theo trên mình sẽ lấy 30 chứ số thập phân. Nếu hai giá trị này bằng nhau thì sẽ ngắt vòng lặp và cập nhật lại precost. Khi ngắt giá trị *theta* tốt nhất sẽ được cập nhật
 
 ```python
