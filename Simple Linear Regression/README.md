@@ -1,5 +1,7 @@
 # SIMPLE LINEAR REGRESSION
 
+Để hiểu được từng bước thực hiện dự đoán bằng thuật toán **Linear Regression** ta xem ở [đây](https://github.com/tandathcmute/MLrepo/tree/master/Simple%20Linear%20Regression/Math%20for%20Linear%20Regression)
+
 ## Các bước thực hiện:
 
 ### 1. Khởi tạo bộ data để mô phỏng thuật toán hồi quy tuyến tính
@@ -76,8 +78,9 @@
       plt.scatter(x,y)
       plt.plot(xfit,yfit)
 ```
-### [Full source code ở đây](https://github.com/tandathcmute/MLrepo/blob/master/Simple%20Linear%20Regression/demoSimpleLinearRegression.ipynb)
-### Xong. :)))
+
+[Full source code ở đây](https://github.com/tandathcmute/MLrepo/blob/master/Simple%20Linear%20Regression/demoSimpleLinearRegression.ipynb)
+
 Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
 ### Nguồn tham khảo:
 [Scikit-learn](https://scikit-learn.org)
