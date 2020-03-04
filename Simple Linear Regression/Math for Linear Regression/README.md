@@ -111,4 +111,5 @@ Khi ta dùng file [univariate_theta.txt](https://github.com/tandathcmute/MLrepo/
 Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
 ## Nguồn: 
 [Howkteam](https://www.howkteam.vn/)
+
 [Machine Learning cơ bản](https://machinelearningcoban.com/2016/12/28/linearregression/)
