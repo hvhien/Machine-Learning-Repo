@@ -72,7 +72,7 @@ def gradientdescent(X,y,alpha=0.02,iter=5000):
 
 Trong đó: 
   * *alpha* bước chạy mặc định là 0.02. Tuy nhiên khi ta tăng lên có thể xáy ra trường hợp nó bước qua điểm lõm còn khi giảm thấp nó sẽ đi rất chậm dẫn đến tốn thời gian.
-  * *inter* là số lần lặp. Chúng ta có thể điều chỉnh được số lần lặp này.
+  * *iter* là số lần lặp. Chúng ta có thể điều chỉnh được số lần lặp này.
   * *theta* chính là ma trận cần tìm, và nó phải bằng đúng số cột của X
   * *precost* để kiểm tra giá trị của điểm đang xét lúc đầu
   * *cost* để kiểm tra giá trị của điểm đang xét lúc sau
@@ -107,6 +107,8 @@ plt.show()
 
 ## Một vài lưu ý:
 Khi ta dùng file [univariate_theta.txt](https://github.com/tandathcmute/MLrepo/blob/master/Simple%20Linear%20Regression/Math%20for%20Linear%20Regression/univariate_theta.txt) ta vẫn thu được đồ thị tương xứng với nhau trong khi giá trị *Theta* trong file này khác xa với *Theta* mà ta tìm được.
+
+Full source code ở [đây](https://github.com/tandathcmute/MLrepo/blob/master/Simple%20Linear%20Regression/Math%20for%20Linear%20Regression/test.py) 
 
 Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
 ## Nguồn: 
