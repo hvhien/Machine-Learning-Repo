@@ -19,6 +19,7 @@ Ta sẽ có X là ma trận gồm các input. Và nó là một vector ngang 1 *
 ```python
     X = np.copy(raw)
     X[:,1] = X[:,0]
+    y = raw[:,1]
 ```
 và ta sẽ có cột y là chứa các output trong bộ data của chúng ta.
 
