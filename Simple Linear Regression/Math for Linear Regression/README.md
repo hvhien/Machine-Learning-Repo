@@ -102,8 +102,8 @@ Theo công thức tìm hθ(x), ***Linear Regression*** chỉ đơn giản là nh
 ## Trực quan hoá đồ thị để dự đoán kết quả:
 ```python
     plt.plot(X[:,1:],y,'rx')
-plt.plot(X[:,1:],predicted,'b')
-plt.show()
+    plt.plot(X[:,1:],predicted,'b')
+    plt.show()
 ```
 ![](https://github.com/tandathcmute/MLrepo/blob/master/Simple%20Linear%20Regression/Math%20for%20Linear%20Regression/dothiketqua.png)
 
