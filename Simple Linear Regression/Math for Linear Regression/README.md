@@ -85,7 +85,7 @@ Trong đó:
     theta = theta - (alpha/m) * (X_T@error)
 ```
 
-Hàm trên chính là mô phỏn lại công thức của ***Gradient Descent***
+Hàm trên chính là mô phỏng lại công thức của ***Gradient Descent***
 
 Để lấy giá trị của bộ θ ta sẽ viết:
 ```python
