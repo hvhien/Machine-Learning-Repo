@@ -15,7 +15,7 @@ Tuy nhiên, nếu dùng công thức này rất là lâu khi ta phải nhân t�
 
 Ta sẽ có X là ma trận gồm các input. Và nó là một vector ngang 1 * n. Theta là một vector chứa tất cả các theta
 
-Để nhân hai ma trận này ta phải có số cột của X bằng với số hàng của theta. Tuy nhiên sẽ xảy ra trường hợp là θo không có x0 tương ứng. Để giải quyết trường hợp này ta sẽ thêm một cột có giá trị luôn băng 1 ở đầu cột X
+Để nhân hai ma trận này ta phải có số cột của X bằng với số hàng của theta. Tuy nhiên sẽ xảy ra trường hợp là θo không có x0 tương ứng. Để giải quyết trường hợp này ta sẽ thêm một cột có giá trị luôn bằng 1 ở đầu cột X
 ```python
     X = np.copy(raw)
     X[:,1] = X[:,0]
@@ -72,7 +72,7 @@ def gradientdescent(X,y,alpha=0.02,iter=5000):
 ```
 
 Trong đó: 
-  * *alpha* bước chạy mặc định là 0.02. Tuy nhiên khi ta tăng lên có thể xáy ra trường hợp nó bước qua điểm lõm còn khi giảm thấp nó sẽ đi rất chậm dẫn đến tốn thời gian.
+  * *alpha* bước chạy mặc định là 0.02. Tuy nhiên khi ta tăng lên có thể xảy ra trường hợp nó bước qua điểm lõm còn khi giảm thấp nó sẽ đi rất chậm dẫn đến tốn thời gian.
   * *iter* là số lần lặp. Chúng ta có thể điều chỉnh được số lần lặp này.
   * *theta* chính là ma trận cần tìm, và nó phải bằng đúng số cột của X
   * *precost* để kiểm tra giá trị của điểm đang xét lúc đầu
