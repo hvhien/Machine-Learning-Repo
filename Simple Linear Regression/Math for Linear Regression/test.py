@@ -1,12 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
 raw = np.loadtxt('univariate.txt',delimiter = ',')
 
 X = np.copy(raw)
 X[:,1] = X[:,0]
-#thêm bias 1
 X[:,0] = 1
-#Tách lấy y
 y = raw[:,1]
 
 def predict(X,theta):
