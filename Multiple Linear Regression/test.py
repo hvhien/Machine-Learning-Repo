@@ -27,9 +27,10 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 
+X = np.append (arr=np.ones((50,1)).astype(int), values = X, axis = 1)
+
 # Building the optimal model using Backward Elimination
 import statsmodels.api as sm
-X = np.append(arr = np.ones((50,1)).astype(int), values = X, axis = 1)
 ## Step 1
 X_opt = X[:, [0,1,2,3,4,5]]
 ## Step 2
@@ -59,3 +60,26 @@ X_opt = X[:, [0,3]]
 reg_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 ## Step 3
 print(reg_OLS.summary())
+
+import numpy as nm  
+import matplotlib.pyplot as mpl  
+import pandas as pd
+
+data_set_after = pd.read_csv('50_Startups_after.csv')
+X_after = data_set_after.iloc[:,:-1].values
+y_after = data_set_after.iloc[:,1].values
+
+from sklearn.model_selection import train_test_split
+X_after_train, X_after_test, y_after_train,y_after_test = train_test_split(X_after, y_after, test_size = 0.02,
+                                                                           random_state = 0)
+
+from sklearn.linear_model import LinearRegression
+lin_reg = LinearRegression()
+lin_reg.fit(X_after_train, y_after_train)
+
+mpl.scatter(X_after_train,y_after_train)
+mpl.plot(X_after_train, lin_reg.predict(X_after_train))
+mpl.xlabel("R&D Spend")
+mpl.ylabel("Profit")
+mpl.title("R&D Spend vs Profit (Training set)", color = 'darkred')
+mpl.show()
