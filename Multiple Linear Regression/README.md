@@ -83,7 +83,7 @@ Sau khi loại bỏ hết bộ data của chúng ta sẽ như thế này:
 
 Bài toán sẽ đưa về Simple Linear Regression. Và ta sẽ visualization bằng matplotlib đơn thuần. 
 
-`Lưu ý: ` Ta không thể trực quan hoá để dự đoán trong multivariable vì ta sẽ có nhiều hồi quy hơn trong một biểu đồ. Bằng cách đưa về ***Simple Linear Regression*** ta sẽ dễ dàng dự đoán kết quả hơn.
+`Lưu ý:` Ta không thể trực quan hoá để dự đoán trong multivariable vì ta sẽ có nhiều hồi quy hơn trong một biểu đồ. Bằng cách đưa về ***Simple Linear Regression*** ta sẽ dễ dàng dự đoán kết quả hơn.
 
 ### 7. Đưa bài toán về Simple Linear Regression.
 Để đơn giản ta sẽ tạo một bản sao data khác và xoá đi các cột không cần thiết. Sau đó trực quan hoá và dự đoán kết quả như ***Simple Linear Regression***
