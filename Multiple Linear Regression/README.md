@@ -77,7 +77,49 @@ Ta sẽ bỏ giá trị P_values lớn nhất đó chính là 0.99. Ta sẽ lo�
 
 Giá trị P_values có thể nhìn thấy nó bằng 0 nhưng giá trị P_values thật sự **không bao giờ bằng 0**
 
-Sau khi loại bỏ hết bộ data của chúng ta sẽ như thế này
+Sau khi loại bỏ hết bộ data của chúng ta sẽ như thế này:
+
 ![](https://github.com/tandathcmute/MLrepo/blob/master/Multiple%20Linear%20Regression/after.png)
 
 Bài toán sẽ đưa về Simple Linear Regression. Và ta sẽ visualization bằng matplotlib đơn thuần. 
+
+`Lưu ý: ` Ta không thể trực quan hoá để dự đoán trong multivariable vì ta sẽ có nhiều hồi quy hơn trong một biểu đồ. Bằng cách đưa về ***Simple Linear Regression*** ta sẽ dễ dàng dự đoán kết quả hơn.
+
+### 7. Đưa bài toán về Simple Linear Regression.
+Để đơn giản ta sẽ tạo một bản sao data khác và xoá đi các cột không cần thiết. Sau đó trực quan hoá và dự đoán kết quả như ***Simple Linear Regression***
+```python
+import numpy as nm  
+import matplotlib.pyplot as mpl  
+import pandas as pd
+
+data_set_after = pd.read_csv('50_Startups_after.csv')
+X_after = data_set_after.iloc[:,:-1].values
+y_after = data_set_after.iloc[:,1].values
+
+from sklearn.model_selection import train_test_split
+X_after_train, X_after_test, y_after_train,y_after_test = train_test_split(X_after, y_after, test_size = 0.02,
+                                                                           random_state = 0)
+
+from sklearn.linear_model import LinearRegression
+lin_reg = LinearRegression()
+lin_reg.fit(X_after_train, y_after_train)
+
+mpl.scatter(X_after_train,y_after_train)
+mpl.plot(X_after_train, lin_reg.predict(X_after_train))
+mpl.xlabel("R&D Spend")
+mpl.ylabel("Profit")
+mpl.title("R&D Spend vs Profit (Training set)", color = 'darkred')
+mpl.show()
+```
+
+Và đây là kết quả
+
+![](https://github.com/tandathcmute/MLrepo/blob/master/Multiple%20Linear%20Regression/Figure_1.png)
+
+[Full source code ở đây](https://github.com/tandathcmute/MLrepo/blob/master/Multiple%20Linear%20Regression/test.py)
+
+Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
+
+[Scikit-learn](https://scikit-learn.org)
+
+[Statsmodels](https://www.statsmodels.org/stable/index.html)
