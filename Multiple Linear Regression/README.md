@@ -66,4 +66,5 @@ Backward Elimination được thực hiện theo các bước:
     * Nếu P_values > SL ta sẽ fit model trực tiếp mà không loại bỏ giá trị dự đoán nào nữa.
  
 Vậy giá trị P_values là gì. Ta có thể tham khảo video này:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eyknGvncKLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+https://www.youtube.com/watch?v=eyknGvncKLw
