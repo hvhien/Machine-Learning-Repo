@@ -18,20 +18,14 @@ X = onehotencoder.fit_transform(X).toarray()
 # Avoid the dummy variable trap
 X = X[:,1:]
 
-
 # Split the dataset into the training set and the test set
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.2, random_state = 0)
 
-X_save = X_train[:,2:3]
-
 #Fit to the training set
 from sklearn.linear_model import LinearRegression
-reg = LinearRegression()
-reg.fit(X_save,y_train)
-
-#Predict
-
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
 
 # Building the optimal model using Backward Elimination
 import statsmodels.api as sm
@@ -65,8 +59,3 @@ X_opt = X[:, [0,3]]
 reg_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 ## Step 3
 print(reg_OLS.summary())
-
-
-
-
-
