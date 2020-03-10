@@ -112,7 +112,7 @@ Khi ta dùng file [univariate_theta.txt](https://github.com/tandathcmute/MLrepo/
 
 Full source code ở [đây](https://github.com/tandathcmute/MLrepo/blob/master/Simple%20Linear%20Regression/Math%20for%20Linear%20Regression/test.py) 
 
-Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
+Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.ute)
 ## Nguồn: 
 [Howkteam](https://www.howkteam.vn/)
 
