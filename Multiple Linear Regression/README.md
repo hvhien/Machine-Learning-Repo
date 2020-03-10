@@ -65,6 +65,19 @@ Backward Elimination được thực hiện theo các bước:
       * Fit lại model sau khi loại bỏ giá trị dự đoán.
     * Nếu P_values > SL ta sẽ fit model trực tiếp mà không loại bỏ giá trị dự đoán nào nữa.
  
-Vậy giá trị P_values là gì. Ta có thể tham khảo video này:
+Vậy giá trị P_values là gì. Ta có thể tham khảo video [này](https://www.youtube.com/watch?v=eyknGvncKLw)
 
-https://www.youtube.com/watch?v=eyknGvncKLw
+Và khi giá trị P_values > SL với SL = 0.05 như ảnh 
+
+![](https://github.com/tandathcmute/MLrepo/blob/master/Multiple%20Linear%20Regression/Capture.PNG)
+
+Ta sẽ bỏ giá trị P_values lớn nhất đó chính là 0.99. Ta sẽ loại bỏ tới khi không còn giá trị P_values > SL nữa.
+
+![](https://github.com/tandathcmute/MLrepo/blob/master/Multiple%20Linear%20Regression/Capture2.PNG)
+
+Giá trị P_values có thể nhìn thấy nó bằng 0 nhưng giá trị P_values thật sự **không bao giờ bằng 0**
+
+Sau khi loại bỏ hết bộ data của chúng ta sẽ như thế này
+![](https://github.com/tandathcmute/MLrepo/blob/master/Multiple%20Linear%20Regression/after.png)
+
+Bài toán sẽ đưa về Simple Linear Regression. Và ta sẽ visualization bằng matplotlib đơn thuần. 
