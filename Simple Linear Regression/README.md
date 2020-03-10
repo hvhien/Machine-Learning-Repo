@@ -81,7 +81,7 @@
 
 [Full source code ở đây](https://github.com/tandathcmute/MLrepo/blob/master/Simple%20Linear%20Regression/demoSimpleLinearRegression.ipynb)
 
-Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.lvc)
+Viết bởi [Trịnh Tấn Đạt](https://www.facebook.com/ttd.ute)
 ### Nguồn tham khảo:
 [Scikit-learn](https://scikit-learn.org)
 
