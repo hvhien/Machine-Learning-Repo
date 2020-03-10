@@ -88,13 +88,9 @@ Bài toán sẽ đưa về Simple Linear Regression. Và ta sẽ visualization b
 ### 7. Đưa bài toán về Simple Linear Regression.
 Để đơn giản ta sẽ tạo một bản sao data khác và xoá đi các cột không cần thiết. Sau đó trực quan hoá và dự đoán kết quả như ***Simple Linear Regression***
 ```python
-import numpy as nm  
-import matplotlib.pyplot as mpl  
-import pandas as pd
-
-data_set_after = pd.read_csv('50_Startups_after.csv')
-X_after = data_set_after.iloc[:,:-1].values
-y_after = data_set_after.iloc[:,1].values
+X_after = dataset['R&D Spend'].values
+X_after = np.reshape(X_after, (-1,1))
+y_after = dataset['Profit'].values
 
 from sklearn.model_selection import train_test_split
 X_after_train, X_after_test, y_after_train,y_after_test = train_test_split(X_after, y_after, test_size = 0.02,
@@ -104,8 +100,8 @@ from sklearn.linear_model import LinearRegression
 lin_reg = LinearRegression()
 lin_reg.fit(X_after_train, y_after_train)
 
-mpl.scatter(X_after_train,y_after_train)
-mpl.plot(X_after_train, lin_reg.predict(X_after_train))
+mpl.scatter(X_after_train,y_after_train, color = 'blue')
+mpl.plot(X_after_train, lin_reg.predict(X_after_train), color = 'red')
 mpl.xlabel("R&D Spend")
 mpl.ylabel("Profit")
 mpl.title("R&D Spend vs Profit (Training set)", color = 'darkred')
